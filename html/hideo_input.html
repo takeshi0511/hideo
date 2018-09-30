@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/hideo_input.css">
+	
+	<script src="../js/smooth-scroll.js"></script>
+	
+</head>
+
+	<body>
+		<div class="main-box">
+			
+			<p>居酒屋ひでお ビールリスト更新システム</p>
+			
+			<form action="./hideo_updateQuery.php" method="POST">
+				番号<br>
+				<select name="no" id="noInput">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+				</select>
+
+				<br><br>
+			
+				メーカー<br>
+				<input type="text" name="brewery" id="breweryInput" maxlength="25">
+				<br><br>
+			
+				名前<br>
+				<input type="text" name="beername" id="beernameInput" maxlength="25">
+				<br><br>
+			
+				値段<br>
+				<input type="text" name="value" id="valueInput" maxlength="25">
+				<br><br>
+			
+				<input type="submit">
+			</form>
+			
+		</div>
+		
+	</body>
+
+</html>
