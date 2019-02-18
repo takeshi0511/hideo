@@ -2,7 +2,7 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu_1.css">
 	
 </head>
 
@@ -29,7 +29,7 @@
 				</tr>
 
 				<?php
-					$menu_sql = 'SELECT * FROM beer_menu;';
+					$menu_sql = 'SELECT * FROM beer_menu limit 4;';
 					require './batch/get_beer_menu.php';
 
 					$sql_result->close();
@@ -37,5 +37,8 @@
 				?>
 			</table>
 		</div>
+        <div id="telop_area">
+
+        </div>
 	</body>
 </html>

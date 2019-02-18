@@ -22,37 +22,36 @@ body {
 }
 
 #master {
-	position: absolute;
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	color: #FFFFFF;
 	background-color: #000000;
-	text-align: center;
 }
 
 table {
-	position: relative;
-	width: 90%;
-	height: 50%;
-	margin: 3% 5%;
-	padding: 0px;
-/*	top: 0px;
-	left: 5%; */
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 0%;
+	left: 0%;
+	color: #FFFFFF;
 	border: #FFFFFF;
-	font-size: 100%;
-	border-style: solid;
+	font-size: 30px;
 	border-collapse: collapse;
 	background-color: #000000; 
+	border-style: solid;
 
 }
 
 table th {
 	border-style: solid;
+	font-size: 30px;
 }
 
 table td {
+	text-align: center;
+	color: #FFFFFF;
 	background-color: #000000;
 	border-style: solid; 
 }
