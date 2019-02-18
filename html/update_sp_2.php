@@ -14,7 +14,6 @@
 	<body>
 		<?php
 			require './batch/connect_to_db.php';
-
 			require "./batch/updateQuery.php";
 			$db_connect->query($update_sql);
 		?>

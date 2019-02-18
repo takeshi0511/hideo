@@ -56,16 +56,6 @@ table td {
 	border-style: solid; 
 }
 
-#telop_area{
-    position: absolute;
-    top: 80%;
-    left: 0px;
-    height: 20%;
-    width:100%;
-    font-size: 100px;
-    color: #FFFFFF;
-}
-
 /* Define of Column Class */
 
 .cNo {

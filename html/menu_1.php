@@ -2,6 +2,7 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;URL=http://172.17.49.45/~takeshi/hideo/html/event_1.php">
 	<link rel="stylesheet" type="text/css" href="../css/menu_1.css">
 	
 </head>
@@ -31,14 +32,19 @@
 				<?php
 					$menu_sql = 'SELECT * FROM beer_menu limit 4;';
 					require './batch/get_beer_menu.php';
-
-					$sql_result->close();
-					$db_connect->close();
 				?>
 			</table>
 		</div>
         <div id="telop_area">
+            <?php
+                $telop_sql = 'SELECT * FROM hideo_telop WHERE no=1;';
+	            $telop_result = $db_connect->query($telop_sql);
+		        $telop_info = $telop_result->fetch_assoc();
+                print "<marquee>{$telop_info['message']}</marquee>";
 
+				$sql_result->close();
+				$db_connect->close();
+            ?>
         </div>
 	</body>
 </html>
