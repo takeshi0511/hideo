@@ -2,7 +2,7 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;URL=http://172.17.49.45/~takeshi/hideo/html/menu_1.php">
+    <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/menu_1.php">
 	<link rel="stylesheet" type="text/css" href="../css/event.css">
 	
 </head>

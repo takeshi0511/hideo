@@ -36,7 +36,7 @@ CREATE TABLE `beer_menu` (
 
 LOCK TABLES `beer_menu` WRITE;
 /*!40000 ALTER TABLE `beer_menu` DISABLE KEYS */;
-INSERT INTO `beer_menu` VALUES (1,'KIRIN','aaaaa','500'),(2,'KIRIN','aaaaa','500'),(3,'KIRIN','aaaaa','500'),(4,'KIRIN','aaaaa','500'),(5,'KIRIN','aaaaa','500'),(6,'KIRIN','aaaaa','500'),(7,'KIRIN','aaaaa','500'),(8,'KIRIN','aaaaa','500');
+INSERT INTO `beer_menu` VALUES (1,'brewery','beername','value'),(2,'22222222','2222222','22222'),(3,'KIRIN','aaaaa','500'),(4,'KIRIN','aaaaa','500'),(5,'KIRIN','aaaaa','500'),(6,'KIRIN','aaaaa','500'),(7,'KIRIN','aaaaa','500'),(8,'KIRIN','aaaaa','500');
 /*!40000 ALTER TABLE `beer_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,8 +61,32 @@ CREATE TABLE `beer_menu_tran` (
 
 LOCK TABLES `beer_menu_tran` WRITE;
 /*!40000 ALTER TABLE `beer_menu_tran` DISABLE KEYS */;
-INSERT INTO `beer_menu_tran` VALUES (1,'KIRIN','aaaaa','500'),(2,'KIRIN','aaaaa','500'),(3,'KIRIN','aaaaa','500'),(4,'KIRIN','aaaaa','500'),(5,'KIRIN','aaaaa','500'),(6,'KIRIN','aaaaa','500'),(7,'KIRIN','aaaaa','500'),(8,'KIRIN','aaaaa','500');
+INSERT INTO `beer_menu_tran` VALUES (1,'brewery','beername','value'),(2,'22222222','2222222','22222'),(3,'KIRIN','aaaaa','500'),(4,'KIRIN','aaaaa','500'),(5,'KIRIN','aaaaa','500'),(6,'KIRIN','aaaaa','500'),(7,'KIRIN','aaaaa','500'),(8,'KIRIN','aaaaa','500');
 /*!40000 ALTER TABLE `beer_menu_tran` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `hideo_event`
+--
+
+DROP TABLE IF EXISTS `hideo_event`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `hideo_event` (
+  `no` int(1) NOT NULL DEFAULT 1,
+  `drink_name` varchar(50) NOT NULL,
+  `drink_value` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `hideo_event`
+--
+
+LOCK TABLES `hideo_event` WRITE;
+/*!40000 ALTER TABLE `hideo_event` DISABLE KEYS */;
+INSERT INTO `hideo_event` VALUES (1,'test','xxx$');
+/*!40000 ALTER TABLE `hideo_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -84,7 +108,7 @@ CREATE TABLE `hideo_telop` (
 
 LOCK TABLES `hideo_telop` WRITE;
 /*!40000 ALTER TABLE `hideo_telop` DISABLE KEYS */;
-INSERT INTO `hideo_telop` VALUES (1,'ひでおで、歓送迎会！お疲れ様会！女子会！ ご予約受け賜り中！飲み放題プラン等、ご相談ください(^ ^)');
+INSERT INTO `hideo_telop` VALUES (1,'ここはテロップです。');
 /*!40000 ALTER TABLE `hideo_telop` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -97,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-18 10:47:16
+-- Dump completed on 2019-03-07 20:05:14

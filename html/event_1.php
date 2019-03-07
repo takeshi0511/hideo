@@ -2,7 +2,10 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;URL=http://172.17.49.45/~takeshi/hideo/html/menu_2.php">
+<!--
+    <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/menu_1.php">
+-->
+    <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/menu_2.php">
 	<link rel="stylesheet" type="text/css" href="../css/event.css">
 	
 </head>
@@ -23,22 +26,20 @@
 			require './batch/connect_to_db.php';
 		?>
 
-			<div id="master">
-			<table>
-				<tr>
-					<th colspan="3">本日の樽生</th>
-				</tr>
+		<div id="master">
 
-				<?php
-					$menu_sql = 'SELECT * FROM beer_menu limit 4;';
-					require './batch/get_beer_menu.php';
+            <div id="white_area">
+		    </div>
 
-					$sql_result->close();
-					$db_connect->close();
-				?>
-			</table>
-		</div>
-        <div id="telop_area">
+            <div id="yellow_area">
+                <?php
+                    $event_sql = 'SELECT * from hideo_event;';
+                	$sql_result = $db_connect->query($event_sql);
+		            $event_info = $sql_result->fetch_assoc());
+                    print "{$event_info['drink_name']}";
+                    print "{$event_info['drink_value']}";
+                ?>
+		    </div>
 
         </div>
 	</body>
