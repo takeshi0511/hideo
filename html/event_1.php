@@ -5,7 +5,9 @@
 <!--
     <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/menu_1.php">
 -->
+<!--
     <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/menu_2.php">
+-->
 	<link rel="stylesheet" type="text/css" href="../css/event.css">
 	
 </head>
@@ -35,7 +37,7 @@
                 <?php
                     $event_sql = 'SELECT * from hideo_event;';
                 	$sql_result = $db_connect->query($event_sql);
-		            $event_info = $sql_result->fetch_assoc());
+		            $event_info = $sql_result->fetch_assoc();
                     print "{$event_info['drink_name']}";
                     print "{$event_info['drink_value']}";
                 ?>

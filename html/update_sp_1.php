@@ -39,7 +39,7 @@
                 </div>
 
                 <div id="brewery">
-                    <p>ブルワリー</p>
+                    <p>メーカー</p>
                     <input type="text" name="brewery">
                 </div>
 

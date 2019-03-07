@@ -14,7 +14,14 @@
 	<body>
 		<?php
 			require './batch/connect_to_db.php';
-			require "./batch/updateQuery.php";
+	        
+            $update_sql = "UPDATE beer_menu_tran SET 
+		        brewery=\"{$_POST['brewery']}\",
+		        beername=\"{$_POST['beername']}\",
+		        value=\"{$_POST['value']}\"
+		        WHERE no=\"{$_POST['no']}\";
+	        ";
+
 			$db_connect->query($update_sql);
 		?>
 
