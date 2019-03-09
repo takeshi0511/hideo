@@ -20,8 +20,9 @@
 	<body>
 		<?php
 			require './batch/connect_to_db.php';
-			$update_sql = "UPDATE hideo_telop SET 
-				message=\"{$_POST['message']}\"
+			$update_sql = "UPDATE hideo_event SET 
+				drink_name=\"{$_POST['drink_name']}\",
+				drink_value=\"{$_POST['drink_value']}\"
 				WHERE no=\"1\";
 			";
 			$db_connect->query($update_sql);

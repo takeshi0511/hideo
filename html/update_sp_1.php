@@ -56,7 +56,9 @@
 			    <input type="submit" id="submit_btn" value="この内容で更新する">
 			</form>
 
-			<!-- <input type="button" value="最初へ戻る" onClick="location.href='update_sp_2.php'"> -->
 		</div>
+        <!--
+			<input type="button" value="最初へ戻る" onClick="location.href='update_sp_2.php'">
+        -->
 	</body>
 </html>

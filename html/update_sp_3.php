@@ -52,7 +52,7 @@
 		<div id="master">
 			<div id="complete-msg">
 				<h4>更新が完了しました。</h4>
-				<input type="button" value="最初に戻る" onClick="location.href='./update_sp_1.php'">
+				<input type="button" value="最初に戻る" onClick="location.href='index.html'">
 			</div>
 		</div>
 	</body>

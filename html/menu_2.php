@@ -2,8 +2,8 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;URL=http://172.17.51.124/~takeshi/hideo/html/event_2.php">
-	<link rel="stylesheet" type="text/css" href="../css/menu_2.css">
+    <meta http-equiv="refresh" content="20;URL=/event_2.php">
+	<link rel="stylesheet" type="text/css" href="css/menu_2.css">
 	
 </head>
 
@@ -40,7 +40,7 @@
                 $telop_sql = 'SELECT * FROM hideo_telop WHERE no=1;';
 	            $telop_result = $db_connect->query($telop_sql);
 		        $telop_info = $telop_result->fetch_assoc();
-                print "<marquee scrolldelay=\"1\" scrollamount=\"20\">{$telop_info['message']}</marquee>";
+                print "<marquee scrolldelay=\"1\" scrollamount=\"40\">{$telop_info['message']}</marquee>";
 
 				$sql_result->close();
 				$db_connect->close();
