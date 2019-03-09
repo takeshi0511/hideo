@@ -36,7 +36,7 @@ CREATE TABLE `beer_menu` (
 
 LOCK TABLES `beer_menu` WRITE;
 /*!40000 ALTER TABLE `beer_menu` DISABLE KEYS */;
-INSERT INTO `beer_menu` VALUES (1,'KIRIN','一番搾り','530円'),(2,'KIRIN','一番搾り','530円'),(3,'KIRIN','一番搾り','530円'),(4,'KIRIN','一番搾り','530円'),(5,'KIRIN','一番搾り','530円'),(6,'KIRIN','一番搾り','530円'),(7,'KIRIN','一番搾り','530円'),(8,'KIRIN','一番搾り','530円');
+INSERT INTO `beer_menu` VALUES (1,'キリン','ラガー樽生','入荷待ち'),(2,'キリン','一番搾り','530円'),(3,'キリン','一番搾りプレミアム','580円'),(4,'','ひでおのマジックショー','練習中'),(5,'サッポロ','静岡麦酒','入荷待ち'),(6,'サッポロ','黒ラベル樽生','530円'),(7,'クラフト','よなよなエール','600円'),(8,'クラフト','伊勢角屋ヒメホワイト','600円');
 /*!40000 ALTER TABLE `beer_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +61,7 @@ CREATE TABLE `beer_menu_tran` (
 
 LOCK TABLES `beer_menu_tran` WRITE;
 /*!40000 ALTER TABLE `beer_menu_tran` DISABLE KEYS */;
-INSERT INTO `beer_menu_tran` VALUES (1,'KIRIN','一番搾り','530円'),(2,'KIRIN','一番搾り','530円'),(3,'KIRIN','一番搾り','530円'),(4,'KIRIN','一番搾り','530円'),(5,'KIRIN','一番搾り','530円'),(6,'KIRIN','一番搾り','530円'),(7,'KIRIN','一番搾り','530円'),(8,'KIRIN','一番搾り','530円');
+INSERT INTO `beer_menu_tran` VALUES (1,'KIRIN','一番搾りプレミアム','800円'),(2,'KIRIN','一番搾り','530円'),(3,'KIRIN','一番搾り','530円'),(4,'KIRIN','一番搾り','530円'),(5,'KIRIN','一番搾り','530円'),(6,'KIRIN','一番搾り','530円'),(7,'KIRIN','一番搾り','530円'),(8,'KIRIN','一番搾り','530円');
 /*!40000 ALTER TABLE `beer_menu_tran` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +85,7 @@ CREATE TABLE `hideo_event` (
 
 LOCK TABLES `hideo_event` WRITE;
 /*!40000 ALTER TABLE `hideo_event` DISABLE KEYS */;
-INSERT INTO `hideo_event` VALUES (1,'日本酒','1000円');
+INSERT INTO `hideo_event` VALUES (1,'一番搾り','580円');
 /*!40000 ALTER TABLE `hideo_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,7 +108,7 @@ CREATE TABLE `hideo_telop` (
 
 LOCK TABLES `hideo_telop` WRITE;
 /*!40000 ALTER TABLE `hideo_telop` DISABLE KEYS */;
-INSERT INTO `hideo_telop` VALUES (1,'居酒屋ひでお');
+INSERT INTO `hideo_telop` VALUES (1,'ひでおで、歓送迎会、女子会、お疲れ様会などのご宴会　承ります。飲み放題プラン等、ご相談下さい(*ˆᴗˆ*)');
 /*!40000 ALTER TABLE `hideo_telop` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -121,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-09 11:46:01
+-- Dump completed on 2019-03-10  0:48:32
