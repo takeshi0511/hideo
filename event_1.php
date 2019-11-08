@@ -37,13 +37,13 @@
 
             <div id="yellow_area_2">
                 <?php
-                    print "<B>{$event_info['drink_name']}</B>";
+                    print "<B>{$event_info['name']}</B>";
                 ?>
 		    </div>
 
             <div id="yellow_area_3">
                 <?php
-                    print "<B>{$event_info['drink_value']}</B>";
+                    print "<B>{$event_info['value']}</B>";
                 ?>
 		    </div>
  

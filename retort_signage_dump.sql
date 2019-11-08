@@ -1,6 +1,6 @@
 -- MySQL dump 10.17  Distrib 10.3.11-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: retort_pack
+-- Host: localhost    Database: retort
 -- ------------------------------------------------------
 -- Server version	10.3.11-MariaDB
 
@@ -74,9 +74,9 @@ DROP TABLE IF EXISTS `hideo_event`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `hideo_event` (
   `no` int(1) NOT NULL DEFAULT 1,
-  `drink_name` varchar(50) NOT NULL,
-  `drink_value` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `name` varchar(50) NOT NULL,
+  `value` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,7 +85,6 @@ CREATE TABLE `hideo_event` (
 
 LOCK TABLES `hideo_event` WRITE;
 /*!40000 ALTER TABLE `hideo_event` DISABLE KEYS */;
-INSERT INTO `hideo_event` VALUES (1,'一番搾り','580円');
 /*!40000 ALTER TABLE `hideo_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -121,4 +120,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-10  0:48:32
+-- Dump completed on 2019-11-09  1:28:02
