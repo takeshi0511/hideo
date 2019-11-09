@@ -2,8 +2,8 @@
 <head>
     <title>retort-pack</title>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;URL=../menu/display_/menu_1.php">
-    <link rel="stylesheet" type="text/css" href="./css/display_event.css">	
+    <meta http-equiv="refresh" content="5;URL=../menu/display_menu_1.php">
+    <link rel="stylesheet" type="text/css" href="./css/display_event.css">
 </head>
 
 <!-- List of valiables.
@@ -18,34 +18,26 @@
 -->
 
 <body>
-    
     <?php
         require '../../common/connect_to_db.php';
+        $event_sql = 'SELECT * from hideo_event;';
+        $sql_result = $db_connect->query($event_sql);
+        $event_info = $sql_result->fetch_assoc();
     ?>
-    
     <div id="master">
-
-        <div id="white_area">
+        <div id="page_head">
+            <B>本日のおすすめ</B>
         </div>
 
-        <div id="yellow_area_1">
+        <div id="page_body">
             <?php
-                $event_sql = 'SELECT * from hideo_event;';
-                $sql_result = $db_connect->query($event_sql);
-                $event_info = $sql_result->fetch_assoc();
-                print "<B>本日のフローズン</B><br>";
+                print "<B>{$event_info['name']}</B>";
             ?>
         </div>
 
-        <div id="yellow_area_2">
+        <div id="page_foot">
             <?php
-                print "<B>{$event_info['drink_name']}</B>";
-            ?>
-        </div>
-
-        <div id="yellow_area_3">
-            <?php
-                print "<B>{$event_info['drink_value']}</B>";
+                print "<B>{$event_info['value']}</B>";
             ?>
         </div>
  

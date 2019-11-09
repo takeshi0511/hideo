@@ -19,7 +19,7 @@
 
 <body>
     <?php
-        require './batch/connect_to_db.php';
+        require '../../common/connect_to_db.php';
     ?>
 
     <div id="master">
@@ -30,7 +30,7 @@
 
             <?php
                 $menu_sql = 'SELECT * FROM beer_menu limit 4 offset 4;';
-                require './batch/get_beer_menu.php';
+                require '../../common/get_beer_menu.php';
             ?>
         </table>
     </div>
