@@ -23,27 +23,22 @@
 	<body>
 		<?php
 			require './batch/connect_to_db.php';
+            $event_sql = 'SELECT * from hideo_event;';
+        	$sql_result = $db_connect->query($event_sql);
+		    $event_info = $sql_result->fetch_assoc();
 		?>
 		<div id="master">
-            <div id="white_area">
-                <B>本日のフローズン</B>
+            <div id="page_head">
+                <B>本日のおすすめ</B>
 		    </div>
 
-            <div id="yellow_area_1">
-                <?php
-                    $event_sql = 'SELECT * from hideo_event;';
-                	$sql_result = $db_connect->query($event_sql);
-		            $event_info = $sql_result->fetch_assoc();
-                ?>
-		    </div>
-
-            <div id="yellow_area_2">
+            <div id="page_body">
                 <?php
                     print "<B>{$event_info['name']}</B>";
                 ?>
 		    </div>
 
-            <div id="yellow_area_3">
+            <div id="page_foot">
                 <?php
                     print "<B>{$event_info['value']}</B>";
                 ?>

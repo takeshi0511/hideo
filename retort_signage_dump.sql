@@ -1,13 +1,13 @@
--- MySQL dump 10.17  Distrib 10.3.11-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.14  Distrib 5.5.64-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: retort
 -- ------------------------------------------------------
--- Server version	10.3.11-MariaDB
+-- Server version	5.5.64-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `beer_menu`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `beer_menu` (
-  `no` int(1) NOT NULL DEFAULT 0,
+  `no` int(1) NOT NULL DEFAULT '0',
   `brewery` varchar(50) NOT NULL,
   `beername` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
@@ -48,7 +48,7 @@ DROP TABLE IF EXISTS `beer_menu_tran`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `beer_menu_tran` (
-  `no` int(1) NOT NULL DEFAULT 0,
+  `no` int(1) NOT NULL DEFAULT '0',
   `brewery` varchar(50) NOT NULL,
   `beername` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
@@ -73,7 +73,7 @@ DROP TABLE IF EXISTS `hideo_event`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `hideo_event` (
-  `no` int(1) NOT NULL DEFAULT 1,
+  `no` int(1) NOT NULL DEFAULT '1',
   `name` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -85,6 +85,7 @@ CREATE TABLE `hideo_event` (
 
 LOCK TABLES `hideo_event` WRITE;
 /*!40000 ALTER TABLE `hideo_event` DISABLE KEYS */;
+INSERT INTO `hideo_event` VALUES (1,'test','test');
 /*!40000 ALTER TABLE `hideo_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,8 +97,8 @@ DROP TABLE IF EXISTS `hideo_telop`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `hideo_telop` (
-  `no` int(1) NOT NULL DEFAULT 1,
-  `message` text DEFAULT NULL
+  `no` int(1) NOT NULL DEFAULT '1',
+  `message` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -120,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-09  1:28:02
+-- Dump completed on 2019-11-09 12:21:46

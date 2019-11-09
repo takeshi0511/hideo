@@ -25,7 +25,7 @@
 		<div id="master">
 			<form action="./update_event_sp_2.php" method="POST">
                 	<div id="drink_name">
-                	    <p>本日のフローズン</p>
+                	    <p>本日のおすすめ</p>
                 	    <input type="text" name="drink_name">
                 	</div>
 
