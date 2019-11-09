@@ -24,14 +24,14 @@
 
 		<div id="master">
 			<form action="./update_event_sp_2.php" method="POST">
-                	<div id="drink_name">
+                	<div id="event_name">
                 	    <p>本日のおすすめ</p>
-                	    <input type="text" name="drink_name">
+                	    <input type="text" name="event_name">
                 	</div>
 
-                	<div id="drink_value">
+                	<div id="event_value">
                 	    <p>値段</p>
-                	    <input type="text" name="drink_value">
+                	    <input type="text" name="event_value">
                 	</div>
 
 			    <input type="submit" id="submit_btn" value="この内容で更新する">
