@@ -2,7 +2,9 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
+<!--
     <meta http-equiv="refresh" content="5;URL=/menu_2.php">
+-->
 	<link rel="stylesheet" type="text/css" href="../css/event.css">
 	
 </head>
@@ -24,6 +26,7 @@
 		?>
 		<div id="master">
             <div id="white_area">
+                <B>本日のフローズン</B>
 		    </div>
 
             <div id="yellow_area_1">
@@ -31,7 +34,6 @@
                     $event_sql = 'SELECT * from hideo_event;';
                 	$sql_result = $db_connect->query($event_sql);
 		            $event_info = $sql_result->fetch_assoc();
-                    print "<B>本日のフローズン</B><br>";
                 ?>
 		    </div>
 
