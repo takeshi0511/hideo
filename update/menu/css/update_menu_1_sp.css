@@ -37,6 +37,17 @@ p {
 
 input {
     position: relative;
+    width: 80%;
+    height: 100px;
+    font-size: 50px;
+}
+
+select {
+    position: relative;
+    width: 30%;
+    height: 70px;
+    font-size: 50px;
+    align: center
 }
 
 /* Table Define */
@@ -50,35 +61,48 @@ input {
 p {
     margin: 0;
     padding: 0;
+    font-size: 70px;
 }
 
 /* div Define */
 #no {
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    top: 30px;
+    width:100%;
+    height: 20%;
+    top: 5%;
 }
 
 #brewery {
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    top: 50px;
+    width:100%;
+    height: 20%;
+    top: 20%;
 }
 
 #beername {
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    top: 70px;
+    width:100%;
+    height: 20%;
+    top: 40%;
 }
 
 #value {
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    top: 90px;
+    width:100%;
+    height: 20%;
+    top: 60%;
 }
 
 #submit_btn {
-    position: relative;
+    position: absolute;
     color: #000000;
-    top: 120px;
+    width: 50%;
+    height: 10%;
+    top: 80%;
+    left: 25%;
+    font-size: 50px;
 }

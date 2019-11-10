@@ -21,6 +21,10 @@ body {
         sans-serif;
 }
 
+p {
+    font-size:100px;
+}
+
 #master {
     position: absolute;
     text-align: center;
@@ -30,6 +34,33 @@ body {
     padding: 0px;
     width: 1125px;
     height: 2436px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#update_title{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 30%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 150px;
+}
+
+#update_summary{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50%;
     color: #FFFFFF;
     background-color: #000000;
 }
