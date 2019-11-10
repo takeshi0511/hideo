@@ -1,13 +1,13 @@
--- MySQL dump 10.17  Distrib 10.3.11-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.14  Distrib 5.5.64-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: retort_pack
+-- Host: localhost    Database: retort
 -- ------------------------------------------------------
--- Server version	10.3.11-MariaDB
+-- Server version	5.5.64-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `beer_menu`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `beer_menu` (
-  `no` int(1) NOT NULL DEFAULT 0,
+  `no` int(1) NOT NULL DEFAULT '0',
   `brewery` varchar(50) NOT NULL,
   `beername` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
@@ -36,7 +36,7 @@ CREATE TABLE `beer_menu` (
 
 LOCK TABLES `beer_menu` WRITE;
 /*!40000 ALTER TABLE `beer_menu` DISABLE KEYS */;
-INSERT INTO `beer_menu` VALUES (1,'キリン','ラガー樽生','入荷待ち'),(2,'キリン','一番搾り','530円'),(3,'キリン','一番搾りプレミアム','580円'),(4,'','ひでおのマジックショー','練習中'),(5,'サッポロ','静岡麦酒','入荷待ち'),(6,'サッポロ','黒ラベル樽生','530円'),(7,'クラフト','よなよなエール','600円'),(8,'クラフト','伊勢角屋ヒメホワイト','600円');
+INSERT INTO `beer_menu` VALUES (1,'キリン','ラガー樽生','お休み'),(2,'キリン','新！一番搾り','550円'),(3,'キリン','一番搾りプレミアム','600円'),(4,'','',''),(5,'サッポロ','静岡限定！静岡麦酒','売り切れ'),(6,'サッポロ','黒ラベル樽生','550円'),(7,'クラフト','よなよなエール','630円'),(8,'クラフト','常陸野ホワイト','630円');
 /*!40000 ALTER TABLE `beer_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -48,7 +48,7 @@ DROP TABLE IF EXISTS `beer_menu_tran`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `beer_menu_tran` (
-  `no` int(1) NOT NULL DEFAULT 0,
+  `no` int(1) NOT NULL DEFAULT '0',
   `brewery` varchar(50) NOT NULL,
   `beername` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
@@ -61,7 +61,7 @@ CREATE TABLE `beer_menu_tran` (
 
 LOCK TABLES `beer_menu_tran` WRITE;
 /*!40000 ALTER TABLE `beer_menu_tran` DISABLE KEYS */;
-INSERT INTO `beer_menu_tran` VALUES (1,'KIRIN','一番搾りプレミアム','800円'),(2,'KIRIN','一番搾り','530円'),(3,'KIRIN','一番搾り','530円'),(4,'KIRIN','一番搾り','530円'),(5,'KIRIN','一番搾り','530円'),(6,'KIRIN','一番搾り','530円'),(7,'KIRIN','一番搾り','530円'),(8,'KIRIN','一番搾り','530円');
+INSERT INTO `beer_menu_tran` VALUES (1,'キリン','ラガー樽生','お休み'),(2,'キリン','新！一番搾り','550円'),(3,'キリン','一番搾りプレミアム','600円'),(4,'　','　','　'),(5,'サッポロ','静岡限定！静岡麦酒','売り切れ'),(6,'サッポロ','黒ラベル樽生','550円'),(7,'クラフト','よなよなエール','630円'),(8,'クラフト','常陸野ホワイト','630円');
 /*!40000 ALTER TABLE `beer_menu_tran` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -73,9 +73,10 @@ DROP TABLE IF EXISTS `hideo_event`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `hideo_event` (
-  `no` int(1) NOT NULL DEFAULT 1,
-  `drink_name` varchar(50) NOT NULL,
-  `drink_value` varchar(50) NOT NULL
+  `no` int(1) NOT NULL DEFAULT '0',
+  `menu` text,
+  `message` text,
+  `value` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -85,7 +86,7 @@ CREATE TABLE `hideo_event` (
 
 LOCK TABLES `hideo_event` WRITE;
 /*!40000 ALTER TABLE `hideo_event` DISABLE KEYS */;
-INSERT INTO `hideo_event` VALUES (1,'一番搾り','580円');
+INSERT INTO `hideo_event` VALUES (1,'ポップコーン','塩、プラックペッパー、ガーリック、のり塩','350円');
 /*!40000 ALTER TABLE `hideo_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,8 +98,8 @@ DROP TABLE IF EXISTS `hideo_telop`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `hideo_telop` (
-  `no` int(1) NOT NULL DEFAULT 1,
-  `message` text DEFAULT NULL
+  `no` int(1) NOT NULL DEFAULT '0',
+  `message` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -108,7 +109,7 @@ CREATE TABLE `hideo_telop` (
 
 LOCK TABLES `hideo_telop` WRITE;
 /*!40000 ALTER TABLE `hideo_telop` DISABLE KEYS */;
-INSERT INTO `hideo_telop` VALUES (1,'ひでおで、歓送迎会、女子会、お疲れ様会などのご宴会　承ります。飲み放題プラン等、ご相談下さい(*ˆᴗˆ*)');
+INSERT INTO `hideo_telop` VALUES (1,'ひでお！！で、忘年会・新宴会。ご予約承ります。ご相談ください(^^)');
 /*!40000 ALTER TABLE `hideo_telop` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -121,4 +122,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-10  0:48:32
+-- Dump completed on 2019-11-10 20:00:08
