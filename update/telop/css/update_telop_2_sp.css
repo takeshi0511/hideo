@@ -34,10 +34,20 @@ body {
 
 #complete-msg {
     position: absolute;
-    height: 50%;
+    height: 10%;
     width: 100%;
     margin: 0px;
     padding: 0px;
     top: 10%;
     left: 0%;
+    font-size: 100px;
+}
+
+#back_btn {
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    font-size: 100px;
 }

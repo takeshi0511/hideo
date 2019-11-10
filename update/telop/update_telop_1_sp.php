@@ -24,7 +24,7 @@
     <div id="master">
         <form action="./update_telop_2_sp.php" method="POST">
             <p>テロップ更新</p>
-            <input type="text" name="message" id="message_input">
+            <input type="text" id="msg_box" name="message" id="message_input">
             <br><br><br>
             <input type="submit" id="submit_btn" value="この内容で更新する">
         </form>
