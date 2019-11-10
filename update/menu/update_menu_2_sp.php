@@ -2,7 +2,7 @@
 <head>
 	<title>retort-pack</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/update_sp_2.css">
+	<link rel="stylesheet" type="text/css" href="./css/update_menu_2_sp.css">
 	
 </head>
 
@@ -13,7 +13,7 @@
 
 	<body>
 		<?php
-			require './batch/connect_to_db.php';
+			require '../../common/connect_to_db.php';
 	        
             $update_sql = "UPDATE beer_menu_tran SET 
 		        brewery=\"{$_POST['brewery']}\",
@@ -33,8 +33,8 @@
                    print "<p>{$_POST['value']}</p>";
                 ?>
 
-			<input type="button" value="決定" onClick="location.href='./update_sp_3.php'"><br><br> 
-			<input type="button" value="キャンセル" onClick="location.href='update_sp_1.php'">
+			<input type="button" value="決定" onClick="location.href='./update_menu_3_sp.php'"><br><br> 
+			<input type="button" value="キャンセル" onClick="location.href='./update_menu_1_sp.php'">
 		</div>
 	</body>
 </html>
