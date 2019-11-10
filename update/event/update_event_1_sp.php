@@ -23,9 +23,14 @@
 
     <div id="master">
         <form action="./update_event_2_sp.php" method="POST">
-            <div id="event_name">
+            <div id="event_menu">
                 <p>本日のおすすめ</p>
-                <input type="text" name="event_name">
+                <input type="text" name="event_menu">
+            </div>
+
+            <div id="event_message">
+                <p>説明文</p>
+                <input type="text" name="event_message">
             </div>
 
             <div id="event_value">

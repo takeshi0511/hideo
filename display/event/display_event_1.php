@@ -29,9 +29,15 @@
             <B>本日のおすすめ</B>
         </div>
 
-        <div id="page_body">
+        <div id="page_body_1">
             <?php
-                print "<B>{$event_info['name']}</B>";
+                print "<B>{$event_info['menu']}</B>";
+            ?>
+        </div>
+
+        <div id="page_body_2">
+            <?php
+                print "<B>{$event_info['message']}</B>";
             ?>
         </div>
 

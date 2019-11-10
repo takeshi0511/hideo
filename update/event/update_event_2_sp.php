@@ -23,7 +23,8 @@
             UPDATE 
                 hideo_event 
             SET 
-                name=\"{$_POST['event_name']}\",
+                menu=\"{$_POST['event_menu']}\",
+                message=\"{$_POST['event_message']}\",
                 value=\"{$_POST['event_value']}\"
             WHERE 
                 no=\"1\";
