@@ -76,7 +76,7 @@ CREATE TABLE `hideo_event` (
   `no` int(1) NOT NULL DEFAULT '1',
   `name` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
