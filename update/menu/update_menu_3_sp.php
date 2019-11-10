@@ -53,9 +53,9 @@
 
     <div id="master">
         <div id="complete-msg">
-            <h4>更新が完了しました。</h4>
-            <input type="button" value="最初に戻る" onClick="location.href='../../index.html'">
+            更新が完了しました。
         </div>
+        <input type="button" id="back_btn" value="最初に戻る" onClick="location.href='../../index.html'">
     </div>
 
 </body>
