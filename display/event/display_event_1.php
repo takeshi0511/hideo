@@ -26,7 +26,7 @@
     ?>
     <div id="master">
         <div id="page_head">
-            <B>本日のおすすめ</B>
+            <B>ピックアップ！！</B>
         </div>
 
         <div id="page_body_1">
